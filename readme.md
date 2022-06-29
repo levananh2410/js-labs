@@ -205,7 +205,7 @@
          getLanguage();
       }
    ```
- - `this` in a **method** : `this` is owner object
+- `this` in a **method** : `this` is owner object
    ```
    const student = {
       name: 'Bob',
