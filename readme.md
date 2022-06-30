@@ -1,26 +1,26 @@
 # Section 1. Basic
 
-1. ## Data type -> Dynamic type
+### 1. Data type -> Dynamic type
 - Number, String, Boolean, NaN, Undefine, Null , (BigInt, Symbol)  => __(typeof null = 'object' | typeof NaN = 'number' | typeof undefine = 'undefine')__
 - Object collections: Object, Array,  Map, Set, WeakMap, WeakSet, Date
 - Truthy, Falsy(false|0|''|null|undefine|NaN|-0|0n)
 - Ternary: a === b ? result_true | result_false;
 
 
-2. Function
+### 2. Function
 - Reference parameter : There is __no "pass by reference"__ available in JavaScript. You can __pass an object__
 - Function trung ten
 - Ham trong ham
 - 3 Loai Function: 
-  + Declaration function: ` function funcName(){} ` => __hoisting__
-  + Expression Function: `const funcName = function () {} `  => __no hoisting__
-  + Arrow function  : `const sum = () => {}`   => __no hoisting__
+  - Declaration function: ` function funcName(){} ` => __hoisting__
+  - Expression Function: `const funcName = function () {} `  => __no hoisting__
+  - Arrow function  : `const sum = () => {}`   => __no hoisting__
 - Polyfill: function trong es5 nhung khong duoc ho tro o tren cac trinh duyen cu
 - Default param: auto convert null to 0
 - Rest parameter: `arguments, sum(...listParams)`
 - Spread parameter: `sum(...arrayParams)`
 
-3. Object
+### 3. Object
 - Constructor: __new__ User('name', 10);
 - Prototype : Object.prototype.name = value | function
 - Combine : Object.assign(object1, object2);
@@ -31,35 +31,35 @@
 - Object.freeze(obj);
 - Clone Object: clone deep
 
-4. Array
+### 4. Array
 - Mot so ham co ban
-  + __forEach()__
-  + __map()__
-  + __reduce()__
-  + every()
-  + some()
-  + find()
-  + filter()
+  - __forEach()__
+  - __map()__
+  - __reduce()__
+  - every()
+  - some()
+  - find()
+  - filter()
 
 - Combine array: array3 = array1.concat(array2) => tao ra cung nho moi cho array3
 - Insert to Array.
 - Remove element of Array.
 
 
-5. Import, Export
+### 5. Import, Export
 - Export: export {varName}, export default varNameDefault
 - Import: import {varName} from '../../fileName', import varNameDefault from '../../fileName'
 
-6. DOM : Document Object Model
+### 6. DOM : Document Object Model
 - W3C: World Wide Web Consortium
 - document: Element, Attribute, Text
 - Element: id, class, tag, css selector, HTML collection : document.getElementBy...(ID|ClassName|TagName)
-  + document.get**Element**ByID(): return html element
-  + document.get**Elements**ByClassName(): return html collections
-  + document.get**Elements**ByTagName(): return html collections
-  + document.query**Selector**('.heading'): return html element
-  + document.query**SelectorAll**('.heading'): return html collections
-  + document.forms['form-ID']
+  - document.get**Element**ByID(): return html element
+  - document.get**Elements**ByClassName(): return html collections
+  - document.get**Elements**ByTagName(): return html collections
+  - document.query**Selector**('.heading'): return html element
+  - document.query**SelectorAll**('.heading'): return html collections
+  - document.forms['form-ID']
 - Attribute: element.getAttribute('attributeName'); element.setAttribute('attributeName', value);
 - Text: innerText, textContent
 ---
@@ -153,8 +153,8 @@
 
 4. Hoisting
 - Hoisting là một cơ chế Javascript mà các __variable__ và __function__ khi khai báo sẽ được __đưa lên trên cùng (only khai báo)__ của scope trước khi code thực thi.
-| __#__                | __Hoisting__ | __Example__                     |
-| -------------------- | ------------ | ------------------------------- |
+| #                | Hoisting | Example                     |
+| :-------------------- | :---------: | :---------------------------- |
 | var                  | __YES__      | var name = 'Mr.Bean'            |
 | const/let            | NO           | let name = 'Mr.Mean'            |
 | function declaration | __YES__      | function sayHi(){}              |
