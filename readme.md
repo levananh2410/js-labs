@@ -65,7 +65,7 @@
 ---
 # Section 2. Advanced
 
-1. useStrict mode: Sử dụng sự nghiêm ngặt
+### 1. useStrict mode: Sử dụng sự nghiêm ngặt
 - Gán giá trị cho biến chưa được khai báo.
 ```
    variable = "tranvanmy";
@@ -103,7 +103,7 @@
 - Không sử dụng được một số từ khóa dễ gây nhầm lẫn hoặc được coi là có thể được thêm vào ngôn ngữ trong tương lai
 [reference more >>](https://viblo.asia/p/use-strict-la-gi-va-cach-su-dung-trong-javascript-3P0lPz2mKox)
    
-2. __Event loop__: 
+### 2. __Event loop__: 
 - Js is Single Thread (Thread # Process)
 - Thanh phan: __Heap__(Code), __Call Stack__, __WEB API__, __EVENT QUEUE__,**Event Loop**
 - Key word: Single Thread, Memory Heap, Call stack, Stack trace (Error exception), Stack overflow, Asynchronous, 
@@ -111,7 +111,7 @@
 - [more >>](https://www.youtube.com/watch?v=64ASqMjj9_o&t=57s)
 
 
-3. Scope
+### 3. Scope
 - Block scope
 - Function scope
 - Lexical scope:
@@ -151,10 +151,11 @@
    }
 ```
 
-4. Hoisting
+### 4. Hoisting
 - Hoisting là một cơ chế Javascript mà các __variable__ và __function__ khi khai báo sẽ được __đưa lên trên cùng (only khai báo)__ của scope trước khi code thực thi.
-| #                | Hoisting | Example                     |
-| :-------------------- | :---------: | :---------------------------- |
+
+| # | Hoisting | Example |
+| :--- | :----: | :--- |
 | var                  | __YES__      | var name = 'Mr.Bean'            |
 | const/let            | NO           | let name = 'Mr.Mean'            |
 | function declaration | __YES__      | function sayHi(){}              |
@@ -181,7 +182,7 @@
 - **const/let có bị hoisting ko?**
 -> **CÓ**, nhưng kèm theo **Temporal Dead Zone** (ko dùng được trước dòng khai báo)
 
-5. `this`
+### 5. `this`
 - `this` in **Global** context -> **this = global object (window, global)**
 - `this` in **normal function**
   - non-strict mode: **this = global object**
@@ -238,8 +239,9 @@ student.sayHello(); // 'My name is **undefined**'
 
 - `this` in an **event**: `this` = an element that received the even
 
-1.  bind, call, apply
+### 6.  bind, call, apply
 NOTE:  Only works with regular function, **NOT arrow function**.
+
 | #                   | **bind**     | **call**            | **aplly**           |
 | ------------------- | ------------ | ------------------- | ------------------- |
 | bind `this` context | yes          | yes                 | yes                 |
@@ -269,7 +271,7 @@ NOTE:  Only works with regular function, **NOT arrow function**.
 ```
 [read more >>](https://javascript.plainenglish.io/quick-guide-to-call-apply-and-bind-methods-in-javascript-5c00cd856cfa?gi=a6a05d389196)
 
-7. IIFE - Immediately Invoked Function Expression
+### 7. IIFE - Immediately Invoked Function Expression
 Hàm tạo ra chỉ để sử dụng duy nhất đúng 1 lần.
 ```
    // syntax
@@ -286,7 +288,7 @@ Hàm tạo ra chỉ để sử dụng duy nhất đúng 1 lần.
    })();
 ```
 
-8. HOF - Higher Order Function
+### 8. HOF - Higher Order Function
 - La Function co tham so truyen vao la function, hoac gia tri tra ve la 1 function
 ```
    function funcParent(){
@@ -309,7 +311,7 @@ Hàm tạo ra chỉ để sử dụng duy nhất đúng 1 lần.
    
 ```
 
-9. Closure
+### 9. Closure
 - A closure is a function having access to the parent scope, even after the parent function has closed.
 - Ung dung: Co the tao ra duoc cac bien **private** trong ham.
 - Stateful Function la function co kha nang luu tru bien
@@ -329,7 +331,7 @@ Hàm tạo ra chỉ để sử dụng duy nhất đúng 1 lần.
 
 ```
 
-10. Currying
+### 10. Currying
 - **Currying** is the process of taking a function with **multiple arguments** and return a series of functions that take **one argument** and eventually resolve to a value
 - 1 ham nhieu tham so -> nhieu ham co 1 tham so (preload data)
 - Why should I use currying:
@@ -355,7 +357,7 @@ Hàm tạo ra chỉ để sử dụng duy nhất đúng 1 lần.
 
 ```
 
-11. Callback
+### 11. Callback
 - Callback function is Function as arguments
 - Truyen function vao 1 function khac duoi dang arguments.
 ```
@@ -376,11 +378,11 @@ Hàm tạo ra chỉ để sử dụng duy nhất đúng 1 lần.
    //    Your Function is my Call back function
 ```
 
-12. Promise
+### 12. Promise
 **Keep Going**
 
 
-13.  Constructor Function & Factory Function
+### 13.  Constructor Function & Factory Function
 - Constructor Function
 ```
    function User(name, age){
@@ -426,7 +428,7 @@ Hàm tạo ra chỉ để sử dụng duy nhất đúng 1 lần.
    console.log(jqk.showName(), jqk.showAge());     // Out put: "Name: JQK Age: 102"
 
 ```
-14. IIFE -> Module Pattern
+### 14. IIFE -> Module Pattern
 - Dua tren 3 co che: Closure, IIFE, HOF
 ```
    var Module =(function(){
@@ -461,7 +463,7 @@ Hàm tạo ra chỉ để sử dụng duy nhất đúng 1 lần.
    //    "Data private1 : 15"
    //    "Data private1 : 90"
 ```
-15. 
+### 15. 
 
 
 Debounce, Throttle,
