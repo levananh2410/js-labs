@@ -1,6 +1,6 @@
 # Section 1. Basic
 
-1. Data type -> Dynamic type
+1. ##Data type -> Dynamic type
 - Number, String, Boolean, NaN, Undefine, Null , (BigInt, Symbol)  => __(typeof null = 'object' | typeof NaN = 'number' | typeof undefine = 'undefine')__
 - Object collections: Object, Array,  Map, Set, WeakMap, WeakSet, Date
 - Truthy, Falsy(false|0|''|null|undefine|NaN|-0|0n)
